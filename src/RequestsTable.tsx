@@ -1,16 +1,17 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {Request} from "./dto/RequestsDTO";
 
 const URL = "localhost:??"
 
 const RequestTable = () => {
-    const [forms, setForms] = useState([]);
+    const [requests, setRequest] = useState<Request[]>([]);
 
     useEffect(() => {
         const getData = async () => {
             try {
                 await axios.get(URL).then(response => {
-                    setForms(response.data)
+                    setRequest(response.data)
                 })
             }
             catch (error) {
@@ -31,6 +32,15 @@ const RequestTable = () => {
                         <th>Статус</th>
                     </tr>
                 </thead>
+                <tbody>
+                {requests.map(request => (
+                    <tr key={request.id}>
+                        <td>{request.id}</td>
+                        <td>{request.sla}</td>
+                        <td>{request.status}</td>
+                    </tr>
+                ))}
+                </tbody>
             </table>
         </div>
     )
