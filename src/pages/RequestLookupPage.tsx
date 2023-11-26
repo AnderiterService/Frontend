@@ -75,7 +75,7 @@ const RequestLookupPage = () => {
                     </tbody>
                 </table>
             </div>
-
+            <button className={"request-docks-button"}>Дозапрос документов</button>
         </div>
     )
 }

@@ -1,8 +1,9 @@
 .request-lookup-page {
-    text-align: center;
+    text-align: left;
 }
 
 .client-docks-table {
+    text-align: center;
     margin-top: 20px;
     border-collapse: collapse;
     width: 50%;
@@ -16,4 +17,12 @@
 .client-docks-table input {
     width: 100%;
     box-sizing: border-box;
+}
+
+.request-docks-button {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: medium;
 }
