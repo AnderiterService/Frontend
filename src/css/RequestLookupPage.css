@@ -1,0 +1,19 @@
+.request-lookup-page {
+    text-align: center;
+}
+
+.client-docks-table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.client-docks-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.client-docks-table input {
+    width: 100%;
+    box-sizing: border-box;
+}

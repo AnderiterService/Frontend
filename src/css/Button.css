@@ -1,0 +1,19 @@
+.request-lookup-page {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.medium-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    align-items: center; /* Добавлено */
+}
